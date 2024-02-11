@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style_admin.css">
+</head>
+<body>
+    
+    <nav class="navbar"> 
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="#">BOUTIQUE</a></li>
+                <li><a href="#">UTILISATEURS</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="logo"><img src="images/home-icon.png" alt="profile" class="home-icon"></a>
+        <div class="nav-icons">
+            <ul>
+                <li><a href="#"><img src="images/configuration_profile_icon.png" alt="profile" class="user-icon"></a></li>
+                <li><a href="#"><img src="images/search-icon.png" alt="profile" class="search-icon"></a></li>
+                <li><a href="../connexion.html"><img src="images/logout-icon.png" alt="profile" class="logout-icon"></a></li>
+            </ul>
+        </div>
+        <img src="images/menu_icon.png" alt="menu" class="menu">
+    </nav>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

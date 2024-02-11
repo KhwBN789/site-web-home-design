@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    padding: 50px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+    height: 100px;
+}
+.navbar a{
+    color: black;
+}
+.navbar a:hover{
+    color: cadetblue;
+    border-bottom: 2px solid cadetblue;
+}
+.navbar .logo{
+    margin-top: -5px;
+    margin-left: -7%;
+}
+.navbar .nav-links ul, .navbar .nav-icons ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+    margin: 0 20px;
+}
+.navbar .nav-icons ul li{
+    margin: 0 20px;
+}
+.navbar .menu{
+    display: none;
+    position: absolute;
+    top:40px;
+    left:40px;
+    width: 35px;
+}
+.navbar .user-icon{
+    width: 30px;
+}
+.navbar .search-icon{
+    width: 30px;
+}
+.navbar .basket-icon{
+    width: 30px;
+}
+.navbar .logo .home-icon{
+    width: 50px;
+}
+
+/*  */
+.categorie{
+    background-color: rgb(139, 166, 168);
+    /*background-color: darkgoldenrod;*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+    padding: 10px 20px;
+}
+.centre{
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+.contenu{
+    background-color: white;
+    margin: 100px 10% 80px 10%;
+    height: 400px;
+    padding: 100px 20%;
+    min-width: 400px;
+}
+.input-address, .input-pwd{
+    width: 400px;
+    height: 40px;
+}
+.address, .pwd{
+    margin-bottom: 10px;
+}
+.input-address{
+    margin-bottom: 40px;
+}
+.input-pwd{
+    margin-bottom: 10px;
+}
+.connect{
+    width: 405px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(139, 166, 168);
+    /*background-color: darkgoldenrod;*/
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 18px;
+}
+.profile{
+    text-align: center;
+}
+.profile a{
+    color: darkblue;
+}
+.profile a:link { text-decoration: none; }
+.profile a:visited { text-decoration: none; }
+.profile a:hover { text-decoration: underline; }
+.profile a:active { text-decoration: underline; }
+
+.pwd-forgot a{
+    color: darkblue;
+}
+.pwd-forgot a:link { text-decoration: none; }
+.pwd-forgot a:visited { text-decoration: none; }
+.pwd-forgot a:hover { text-decoration: underline; }
+.pwd-forgot a:active { text-decoration: underline; }
+
+
+
+.alert
+{
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+
+/* */
+@media screen and (min-width: 1200px){
+    .contenu{
+        margin: 100px 18% 80px 18%;
+    }
+}
+
+
+/* For small screens */
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 10px;
+    }
+    .navbar{
+        padding: 0;
+        min-width: 350px;
+    }
+    .navbar .logo{
+        margin-top: 10px;
+        margin-left: 37%;
+        margin-right: 50%;
+    }
+    .navbar .menu{
+        display: block;
+    }
+    .nav-links{
+        top:0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(245, 231, 231, 0.363);
+        backdrop-filter: blur(5px);
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: first baseline;
+        align-items: first baseline;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    .navbar .nav-links ul li{
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+    .nav-icons{
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+    .navbar .nav-icons ul li{
+        margin: 0 10px;
+    }
+    .contenu{
+        margin: 0px 68px 0px 32px;
+        height: 400px;
+        padding: 100px 0;
+        min-width: 200px;
+    }
+    .input-address, .input-pwd{
+        width: 300px;
+    }
+
+    .connect{
+        width: 305px;
+    }
+
+    .navbar .menu{
+        width: 25px;
+    }
+    .navbar .user-icon{
+        width: 20px;
+    }
+    .navbar .search-icon{
+        width: 20px;
+    }
+    .navbar .basket-icon{
+        width: 20px;
+    }
+    .navbar .logo .home-icon{
+        width: 35px;
+    }
+
+}

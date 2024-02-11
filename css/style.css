@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: url(../images/img_background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+}
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+    height: 100px;
+}
+.navbar a{
+    color: black;
+}
+.navbar a:hover{
+    color: cadetblue;
+    border-bottom: 2px solid cadetblue;
+}
+.navbar .logo{
+    margin-top: -5px;
+    margin-left: -7%;
+}
+.navbar .nav-links ul, .navbar .nav-icons ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+    margin: 0 20px;
+}
+.navbar .nav-icons ul li{
+    margin: 0 20px;
+}
+.navbar .menu{
+    display: none;
+    position: absolute;
+    top:40px;
+    left:40px;
+    width: 35px;
+}
+.navbar .user-icon{
+    width: 30px;
+}
+.navbar .search-icon{
+    width: 30px;
+}
+.navbar .basket-icon{
+    width: 30px;
+}
+.navbar .logo .home-icon{
+    width: 50px;
+}
+
+/* For small screens */
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 10px;
+    }
+    .navbar{
+        padding: 0;
+        min-width: 350px;
+    }
+    .navbar .logo{
+        margin-top: 10px;
+        margin-left: 37%;
+        margin-right: 50%;
+    }
+    .navbar .menu{
+        display: block;
+    }
+    .nav-links{
+        top:0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(245, 231, 231, 0.363);
+        backdrop-filter: blur(5px);
+        width: 50%;
+        height: 200vh;
+        display: flex;
+        justify-content: first baseline;
+        align-items: first baseline;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    .navbar .nav-links ul li{
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+    .nav-icons{
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+    .navbar .nav-icons ul li{
+        margin: 0 10px;
+    }
+
+    .navbar .menu{
+        width: 25px;
+    }
+    .navbar .user-icon{
+        width: 20px;
+    }
+    .navbar .search-icon{
+        width: 20px;
+    }
+    .navbar .basket-icon{
+        width: 20px;
+    }
+    .navbar .logo .home-icon{
+        width: 35px;
+    }
+}

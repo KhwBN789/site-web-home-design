@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN</title>
+    <link rel="stylesheet" href="css/style_idea.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <div class="nav-links">
+            <ul>
+                <li><a href="shop.html">BOUTIQUE</a></li>
+                <li><a href="idea.html">DESIGN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="logo"><img src="images/home-icon.png" alt="profile" class="home-icon"></a>
+        <div class="nav-icons">
+            <ul>
+                <li><a href="connexion.html"><img src="images/user-icon.png" alt="profile" class="user-icon"></a></li>
+                <li><a href="#"><img src="images/search-icon.png" alt="profile" class="search-icon"></a></li>
+                <li><a href="#"><img src="images/basket-icon.png" alt="profile" class="basket-icon"></a></li>
+            </ul>
+        </div>
+        <img src="images/menu_icon.png" alt="menu" class="menu">
+    </nav>
+
+    <div class="section">
+        <img class="column1" src="images/design1.png">
+        <div class="column2 float-right">
+            <div class="ligne-verticale">
+                <p>Cette collection comprend huit luminaires répartis en deux familles de produits : Foundry et Ridge. <br><br> La première utilise
+                    la technique traditionnelle du moulage au sable et évoque les fleurs en trompette; la seconde se caractérise par des 
+                    formes courbes qui rappellent les ailes déployées d'un oiseau. <br><br> Les modèles sont disponibles dans une large gamme de  
+                    métaux et de patines, y compris le laiton vert-de-gris et le bronze manganèse vieilli.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section2">
+        <img class="column1 img-section2" src="images/design-idea2.png">
+        <div class="column2 float-right">
+            <div class="ligne-verticale">
+                <p>Les explorations en bois, carton et papier indien ainsi que les médiums numériques ont donné naissance à la série 
+                    Abstract Composition. <br><br> Le graphisme d'inspiration moderniste s'inspire de dessins à l'encre, avec des décalages 
+                    wabi-sabi délibérés pour montrer l'art, et présente des formes géométriques dans des tons neutres.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

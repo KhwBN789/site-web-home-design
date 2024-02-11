@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <div class="nav-links">
+            <ul>
+                <li><a href="shop.html">BOUTIQUE</a></li>
+                <li><a href="idea.html">DESIGN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="logo"><img src="images/home-icon.png" alt="profile" class="home-icon"></a>
+        <div class="nav-icons">
+            <ul>
+                <li><a href="connexion.html"><img src="images/user-icon.png" alt="profile" class="user-icon"></a></li>
+                <li><a href="#"><img src="images/search-icon.png" alt="profile" class="search-icon"></a></li>
+                <li><a href="#"><img src="images/basket-icon.png" alt="profile" class="basket-icon"></a></li>
+            </ul>
+        </div>
+        <img src="images/menu_icon.png" alt="menu" class="menu">
+    </nav>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

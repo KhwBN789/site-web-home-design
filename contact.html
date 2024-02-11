@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTEZ-NOUS</title>
+    <link rel="stylesheet" href="css/style_contact.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <div class="nav-links">
+            <ul>
+                <li><a href="shop.html">BOUTIQUE</a></li>
+                <li><a href="idea.html">DESIGN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="logo"><img src="images/home-icon.png" alt="profile" class="home-icon"></a>
+        <div class="nav-icons">
+            <ul>
+                <li><a href="connexion.html"><img src="images/user-icon.png" alt="profile" class="user-icon"></a></li>
+                <li><a href="#"><img src="images/search-icon.png" alt="profile" class="search-icon"></a></li>
+                <li><a href="#"><img src="images/basket-icon.png" alt="profile" class="basket-icon"></a></li>
+            </ul>
+        </div>
+        <img src="images/menu_icon.png" alt="menu" class="menu">
+    </nav>
+
+    <!-- Formulaire -->
+    <div class="form">
+        <form>
+            <div>
+                <label>Prénom</label>
+                <br>
+                <br>
+                <input class="area1" type="text" name="prénom"/>
+            </div>
+            <div>
+                <label>Nom</label>
+                <br>
+                <br>
+                <input class="area1" type="text" name="nom"/>
+            </div>
+            <div class="info">
+                <label>Email</label>
+                <br>
+                <br>
+                <input class="area2" type="text" name="email"/>
+            </div>
+            <div class="info">
+                <label>N° de téléphone</label>
+                <br>
+                <br>
+                <input class="area2" type="text" name="numéro de téléphone"/>
+            </div>
+            <div class="info">
+                <label>Message</label>
+                <br>
+                <br>
+                <textarea class="msg" name="message"></textarea>
+            </div>
+            <div class="assign">
+                <input type="checkbox" name="ch1" value="text"/>
+                <label class="txt">Oui, je souhaite recevoir des newsletters gratuites de Home Design.</label>
+            </div>
+            <div>
+                <input class="send_button" type="submit" value="Envoi"/>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
